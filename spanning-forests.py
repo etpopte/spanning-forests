@@ -367,16 +367,3 @@ def returnTuples(iterList, index, tupleList, currList, vSet):
 			next(iterList[index])
 			break
 	return tupleList
-
-
-start_time = time.time()
-a = Graph({0 : {1}, 1 : set()})
-"a = Graph(2)"
-b = Graph(5)
-c = ProductGraph(a, b, False)
-"""forests = getSpanningForests(c.product)
-for forest in forests[:20]:
-	print(forest.vDict)
-forestSet = [[x, False] for x in forests]"""
-print(testVertIndependence(c))
-print("--- %s seconds ---" % (time.time() - start_time))
